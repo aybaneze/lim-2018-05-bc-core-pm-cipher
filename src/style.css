@@ -1,0 +1,76 @@
+body{
+  background-color:#ffff00;
+  background-image: url("https://artcenterofcitruscounty.org/wp-content/uploads/celebrate-clipart-celebration-pictures-celebrate-clip-art-1200_1043.png");
+  text-align:  center;
+  animation-name: fondos;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  
+ }
+  @keyframes fondos{
+ 
+    0%{background-color:#ccff66;}
+    25%{background-color:#008080 ;}
+    50%{background-color:#b3e6ff ;}
+    85%{background-color: #e6ffcc,}
+    70%{background-color: #ffb366;}
+  }
+ 
+  #name {
+   padding: 4px;
+   font-family: cursive;  
+  }
+ 
+ .styleText {
+   border: 0px;
+   border-radius: 20px;
+   padding: 80px 140px;
+   margin: 5px; 
+   background: #f3223e;
+   color: #ffffff;
+   font-size: 20px;
+ }
+ 
+ #form{
+   float: center;
+   margin: 15px 90px;
+ }
+ 
+ .text {
+   
+   padding: 100px 150px;
+   background-image: url("https://i.pinimg.com/originals/9e/6e/fb/9e6efbd0f96f6cb1243d254f374c060d.jpg");
+   background-color: transparent;
+   background-size: 300px auto;
+   font-size: 20px;
+   border-radius: 20px;
+ }
+ 
+ .Bienvenidx{
+   float: center;
+ }
+ 
+ .estilo {
+   padding: 5px 0.1px; 
+   font-weight: bold;
+ }
+ 
+ .botones{
+   padding: 8px 3px;
+   margin: 4px;
+ }
+ 
+ #res{
+   font-family: cursive;
+   font-size: 22px;
+ }
+
+ h1{
+   color: #ffffff;
+   font-size: 60px;
+  
+ }
