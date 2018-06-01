@@ -1,40 +1,58 @@
 
-const Fname = () => {
-  let name = document.getElementById('name').value;
-  document.getElementById('AnswerName').value="BIENVENIDA!!! "+name;
- }
- 
- const encriptar = () => {
-     let texto = document.getElementById("cifrado").value;
-     let offset1 = parseInt(document.getElementById("offset1").value);
-     let textoCifrado="";
-     for (let i = 0; i < texto.length;i++) {
-         textoCifrado += String.fromCharCode((texto.toUpperCase().charCodeAt(i)-65+offset1)%26+65);
-     }
-     document.getElementById("respuesta").value = textoCifrado;
- }
- 
- const clearEncode =()=> {
-   document.getElementById('cifrado').value="";
-   document.getElementById('offset1').value="";
-   document.getElementById('respuesta').value="";
- }
- 
 
- const desencriptar =() => {
-    let textoD = document.getElementById("respuesta").value;
-    let offset1 = parseInt(document.getElementById("offset1").value);
-    let textoCifradoD = "";
-    for (var i = 0; i < textoD.length;i++) {
-        textoCifradoD += String.fromCharCode((textoD.toUpperCase().charCodeAt(i)+65-offset1)%26+65);
+const encriptar = (offset, string) => {
+    let textCipher = "";
+    for (let i = 0; i < string.length; i++) {
+        let pos = string.charCodeAt(i);
+        if (pos >= 65 && pos <= 90) {
+          textCipher += String.fromCharCode((pos - 65 + offset) % 26 + 65);
+
+        }
+        else if (pos>=97 && pos<=122){       
+          textCipher += String.fromCharCode((pos-97+offset)%26+97); 
+
+          }
+        else {
+          textCipher += String.fromCharCode(pos);
+        }
+
     }
-    document.getElementById("respuesta").value = textoCifradoD;
+    return textCipher
+}
 
-    
- }
+
+const desencriptar = (offset, string) => {
+
+    let textCipherD = "";
+
+    for (let i = 0; i < string.length; i++) {
+        let pos = string.charCodeAt(i);
+
+        if (pos >= 65 && pos <= 90) {
+            textCipherD += String.fromCharCode((pos + 65 - offset) % 26 + 65);
+        }
+
+
+        else{
+          textCipherD += String.fromCharCode(pos);
+        }
+    }
+    return textCipherD
+
+}
+
+
 
 window.cipher = {
-  encode: encriptar,
-  decode: desencriptar,
+    encode: encriptar,
+    decode: desencriptar,  
+    createCipherWithOffset: (offset)=>{
+       // const nuevo =
+        //{
+        //encode: (string)=>{encriptar},
+        //decode: (string)=>{desencriptar}
+        //}
+      return offset;
+    } 
+     }
 
-};

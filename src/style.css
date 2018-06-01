@@ -1,23 +1,19 @@
 body{
-  background-color:#ffff00;
-  background-image: url("https://artcenterofcitruscounty.org/wp-content/uploads/celebrate-clipart-celebration-pictures-celebrate-clip-art-1200_1043.png");
+  background-color:#0c0479;
   text-align:  center;
   animation-name: fondos;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  background-size: 70%;
   background-repeat: no-repeat;
-  background-position: center;
-  
   
  }
   @keyframes fondos{
  
-    0%{background-color:#ccff66;}
-    25%{background-color:#008080 ;}
-    50%{background-color:#b3e6ff ;}
-    85%{background-color: #e6ffcc,}
-    70%{background-color: #ffb366;}
+    0%{background-color:#080879;}
+    25%{background-color:#430766 ;}
+    50%{background-color:#04503d ;}
+    85%{background-color: #013b6b,}
+    70%{background-color: #5c0118;}
   }
  
   #name {
@@ -26,47 +22,64 @@ body{
   }
  
  .styleText {
-   border: 0px;
+   border: 4px #ffffff solid;
    border-radius: 20px;
-   padding: 80px 140px;
+   width: 500px;
+   height: 100px;
    margin: 5px; 
-   background: #f3223e;
+   background: #0b0116;
    color: #ffffff;
    font-size: 20px;
+   padding: 7px;
+ }
+
+ p{
+   font-weight: bold;
+   font-size: 42px;
+   color:#ffffff;
+   text-shadow: 3px 5px #000000;
+   font-family: "Homer Simpson", cursive;
+
  }
  
  #form{
    float: center;
-   margin: 15px 90px;
+   margin-top: 100px;
+   display: none;
+   margin-top: 7%;
  }
  
  .text {
    
-   padding: 100px 150px;
-   background-image: url("https://i.pinimg.com/originals/9e/6e/fb/9e6efbd0f96f6cb1243d254f374c060d.jpg");
-   background-color: transparent;
-   background-size: 300px auto;
+   width: 500px;
+   height: 100px;
+   padding: 10px 10px;
    font-size: 20px;
    border-radius: 20px;
+   border: 4px #ffffff solid;
+   background-color: #000000;
+   color: #ffffff;
  }
  
  .Bienvenidx{
    float: center;
+   margin-top: 13%;
+   
  }
  
  .estilo {
-   padding: 5px 0.1px; 
    font-weight: bold;
- }
- 
- .botones{
-   padding: 8px 3px;
-   margin: 4px;
- }
- 
- #res{
-   font-family: cursive;
+   width:90px;
+   height:30px;
    font-size: 22px;
+   margin-right: 4%;
+ }
+ 
+ .btns{
+   padding: 10px 10px;
+   margin: 4px;
+   border-radius: 10px;
+   font-weight: bold;
  }
 
  h1{

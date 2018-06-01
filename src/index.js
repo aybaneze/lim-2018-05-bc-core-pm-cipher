@@ -1,27 +1,38 @@
 
-let name = document.getElementById('name');
-const btnName =document.getElementById('btnName');
-const cifrar=document.getElementById('cifrar');
-const descifrar=document.getElementById('descifrar');
+const clearE=document.getElementById('clearE');
+const btnEncode=document.getElementById('cifrar');
+const btnDecode=document.getElementById('descifrar');
+const goes=document.getElementById("btnGO");
 
-name.addEventListener('input', () => {
-  console.log(name.value)
+
+goes.addEventListener('click', ()=> {
+let name = document.getElementById('name').value;
+document.getElementById('AnswerName').innerHTML="Welcome "+name.toUpperCase();
+
+ document.getElementById("form").style.display="block";
+ document.getElementById("welcome").style.display="none";
 });
 
-btnName.addEventListener('click', Fname);
+
+btnEncode.addEventListener('click', () => {
+    let string= document.getElementById("string").value;
+    let offset = parseInt(document.getElementById("offset").value);
+    let respuesta= document.getElementById("respuesta");
+    respuesta.value=window.cipher.encode(offset,string)
+
+});
 
 
-cifrado.addEventListener('input', () => {
-    console.log(cifrado.value);
- })
-
-offset1.addEventListener('input', () => {
-    console.log(offset1.value);
-})
-cifrar.addEventListener('click', window.cipher.encode) ;
-
-clearE.addEventListener('click', clearEncode);
+btnDecode.addEventListener('click', ()=>{
+    let string = document.getElementById("string").value.toUpperCase();
+    let offset = parseInt(document.getElementById("offset").value);
+    let respuesta= document.getElementById("respuesta");
+    respuesta.value=window.cipher.decode(offset,string)
+});
 
 
-descifrar.addEventListener('click', window.cipher.decode);
-
+clearE.addEventListener('click', ()=> {
+    document.getElementById("string").value="";
+    document.getElementById('offset').value="";
+    document.getElementById('respuesta').value="";
+  });

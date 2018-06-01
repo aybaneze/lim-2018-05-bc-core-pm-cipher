@@ -4,24 +4,28 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
   </head>
   <body>
       
-    <div class="Bienvenidx">
-      <h1>¿Cual es tu nombre?</h1>
+    <div class="Bienvenidx" id="welcome">
+      <p>Caesar Cipher</p>
+      <h1>Ingresa Tu nombre</h1>
       <input type="text" placeholder="Ingresa tu nombre" id="name">
-      <input type="button"  value="SEGUIR" id="btnName">
-      <input type="text" id="AnswerName" class="styleAnswer">
+      <input type="button"  value="GO" id="btnGO" class="btns">
      </div>
-      <form action="" id="form">
-        <input type="text" id="cifrado" class="styleText" > <br>
-        <input type="text" id="offset1" placeholder="Ingrese numero" class="estilo" > 
-        <input type="button" value="ENCODE" id="cifrar" class="botones" >      
-        <input type="button" value="DECODE"  id="descifrar" class="botones" >
-        <input type="button" value="CLEAR" id="clearE" class="botones" ><br>     
-        <input type="text" id="respuesta" class="text">
-        
-      </form>
+    
+     <div id="form">
+      <form action="" >
+        <p id="AnswerName"></p>
+        <input type="text" id="string" class="styleText" > <br><br>
+        <input type="text" id="offset" class="estilo" maxlength="3" >
+        <input type="button" value="ENCODE" id="cifrar" class="btns" >      
+        <input type="button" value="DECODE"  id="descifrar" class="btns" ><br><br>  
+        <input type="text" id="respuesta" class="styleText"><br>
+        <input type="button" value="CLEAR" id="clearE" class="btns" > 
+
+      </form></div>
       
     <div id="root"></div>
     <script src="cipher.js"></script>
