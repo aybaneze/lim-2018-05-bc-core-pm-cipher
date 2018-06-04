@@ -4,7 +4,7 @@
 
 El tema principal para desarrollar este programa, es por que un compañero quiere realizarle una fiesta sorpresa a su novia, sin embargo no quiere que ella se entere, ya que se comunicará con su grupo de amigos a traves de mensajes, por ello me pidio realizar un programa para que cifre los mensajes que se enviarán, y que el pueda establecer el número segun desee cifrar.
 
-##PROTOTIPO
+## PROTOTIPO
 
 Realizado en Balsamiq mockups 3
 
@@ -23,7 +23,9 @@ BOTON GO: esto te va a dirigir a la siguiente pantalla
 Input1: Ingresar el texto que desea cifrar
 botonCIfrar
 BotonDescifrar
-BotonClear: se encarga de borrar todos los datos ingresados ###¿En que consiste el cifrado cesar?
+BotonClear: se encarga de borrar todos los datos ingresados 
+
+### ¿En que consiste el cifrado cesar?
 Sirve para mover cada letra con un determinado número de espacios en el alfabeto. En este ejemplo se usa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado. Análisis de frecuencias y ataques por fuerza bruta.
 
 
