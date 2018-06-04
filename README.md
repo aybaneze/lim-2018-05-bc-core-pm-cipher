@@ -1,5 +1,7 @@
 #Caesar Cipher
+
 ##Fiesta Sorpresa
+
 El tema principal para desarrollar este programa, es por que un compañero quiere realizarle una fiesta sorpresa a su novia, sin embargo no quiere que ella se entere, ya que se comunicará con su grupo de amigos a traves de mensajes, por ello me pidio realizar un programa para que cifre los mensajes que se enviarán, y que el pueda establecer el número segun desee cifrar.
 
 ##PROTOTIPO
