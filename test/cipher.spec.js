@@ -64,4 +64,4 @@ describe('cipher.createCipherWithOffset', () => {
  //it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () =>{
   //assert.equal(cipher,cipher.createCipherWithOffset(3));
  }); 
-});
+//});
