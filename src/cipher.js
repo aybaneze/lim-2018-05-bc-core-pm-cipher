@@ -29,7 +29,7 @@ const desencriptar = (offset, string) => {
         let pos = string.charCodeAt(i);
 
         if (pos >= 65 && pos <= 90) {
-            textCipherD += String.fromCharCode((pos + 65 - offset) % 26 + 65); // formula para desencriptar letras ASCII-MAYUSCULAS
+            textCipherD += String.fromCharCode((pos + 65 - offset%26) % 26 + 65); // formula para desencriptar letras ASCII-MAYUSCULAS
 
         }
 
@@ -46,17 +46,12 @@ const desencriptar = (offset, string) => {
 window.cipher = {
     encode: encriptar,
     decode: desencriptar,
-    
-     }
 
-
-
- 
- cipher.createCipherWithOffset= (offset)=>{
-
-    //let  encode= (string)=>{return cipher.encode(string);}
-    //let  decode= (string)=>{return cipher.decode(string);};
-
-        return offset
+ createCipherWithOffset: (offset)=>{
+   const nuevo={
+      encode: (string)=>{return cipher.encode(offset,string);},
+      decode: (string)=>{return cipher.decode(offset,string);}
+   }
+        return nuevo
       
-    }
+}}
